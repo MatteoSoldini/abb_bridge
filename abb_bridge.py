@@ -12,8 +12,8 @@ while True:
         except:
             print("No response from server")
             continue
-        if r.status_code is 200:
-            if r.text is not '0':
+        if r.status_code == 200:
+            if r.text != '0':
                 print('Server say: ' + r.text)
                 try:
                     requests.get('http://192.168.4.1/pos' + r.text, timeout=5)
