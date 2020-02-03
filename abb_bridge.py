@@ -24,5 +24,5 @@ while True:
         else:
             print('Server error')
     except:
-	print("Fatal error!")
+        print("Fatal error!")
     time.sleep(0.2)
